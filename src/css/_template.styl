@@ -1,0 +1,20 @@
+//Template
+//only controls: page layout, responsive, 
+//and some other styles that are best applied to layout parts
+.template__container
+  display: flex
+  height: 100%
+  //fallback for browsers that don't support 'vh' unit
+  min-height: 100vh
+  //full height of the viewport even when content does not warrant a vertical scroll bar
+  box-shadow: $boxShadow
+
+.template__nav
+  flex-basis: 200px
+  padding: 25px
+
+.template__main
+  flex-basis: 100% //for browsers that don't support calc().
+  flex-basis: calc(100% - 200px)
+  background: $gray-lighter
+  padding: 50px

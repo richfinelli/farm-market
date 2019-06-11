@@ -1,0 +1,35 @@
+//Sitewide-menu
+//the sitewide controls including the logo, add product button, and site's menu
+//container around it all...
+.sitewide-menu
+  background: $blue-dark
+//container around the site logo
+.sitewide-logo__container
+  display: flex
+  justify-content: center
+  margin: 30px 0
+.sitewide-logo__image
+  width: 70px
+  height: 90px
+//container around the menu
+.sitewide-nav__container
+  font-size: 1.3rem
+//call to action button: "Add products"
+.sitewide-nav__button
+  padding-bottom: 30px
+  border-bottom: 1px solid $gray-light
+  .btn
+    width: 100%
+    display: block
+//navigation items
+.sitewide-nav__item
+  margin-top: 30px
+.sitewide-nav__anchor
+  color: $gray-light
+  text-transform: uppercase
+  text-decoration: none
+//   &:hover
+//     color: lighten($gray-light, 10%)
+//nav active state
+.sitewide-nav__item--active
+  color: #fff

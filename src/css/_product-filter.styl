@@ -1,0 +1,89 @@
+//Product filter
+//on the dashboard, filters products
+//container around everything
+.product-filter
+  display: flex
+  justify-content: flex-start
+  margin-bottom: 50px
+  background-color: $white
+  border-radius: $borderRadius
+  box-shadow: $boxShadow
+.product-filter__item
+  border-right: 1px solid $gray-lighter
+  position: relative
+.product-filter__title
+  color: $gray-light
+  font-weight: 300
+.product-filter__title,
+.product-filter__button
+  padding: 15px 20px
+.product-filter__button
+  display: flex
+  align-items: center
+  background: none
+  border: none
+  color: $blue-dark
+  //button's carrot icon
+  &:after
+    content: " "
+    display: block
+    width: 8px
+    height: 8px
+    border-right: 2px solid $blue
+    border-bottom: 2px solid $blue
+    transform: rotate(45deg)
+    margin-left: 15px
+///////////////
+///sub-menu
+//"pf" abbreviation for "Product Filter"
+///////////////
+.pf-sub-menu
+  position: absolute
+  top: 52px
+  left: 0
+  width: 100%
+  padding: 10px
+  background-color: $white
+  border-bottom-left-radius: $borderRadius
+  border-bottom-right-radius: $borderRadius
+  box-shadow: $boxShadow
+  font-size: 1.3rem
+  display: none
+.pf-sub-menu--open
+  display: block
+.pf-sub-menu__item
+  margin-bottom: 5px
+  input
+    visibility: hidden
+    position: absolute
+  label
+    position: relative
+    padding-left: 25px
+    cursor: pointer
+  label:before
+    position: absolute
+    left: 0
+    top: 0
+    content: " "
+    display: block
+    width: 15px
+    height: 15px
+    margin-right: 10px
+    border: 2px solid $blue
+    border-radius: $borderRadius
+  label:after
+    position: absolute
+    left: 5px
+    top: 1px
+    content: " "
+    width: 5px
+    height: 10px
+    margin-right: 10px
+    border-right: 2px solid $white
+    border-bottom: 2px solid $white
+    transform: rotate(45deg)
+    display: none
+  input:checked + label:before
+    background-color: $blue
+  input:checked + label:after
+    display: block

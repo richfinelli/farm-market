@@ -1,0 +1,65 @@
+//Product Card
+//on the dashboard, each product has a card
+.products-container
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+.product-card
+  border-radius: $borderRadius
+  box-shadow: $boxShadow
+  background-color: $green-light
+  width: 31%
+  margin-bottom: 30px
+  transition: $transition
+  cursor: pointer
+.product-card__image
+  height: 200px
+  padding: 25px
+  background-color: $white
+  display: flex
+  justify-content: center
+  align-items: center
+.product-card__details
+  padding: 15px 25px 25px 25px
+  color: $blue-dark
+  transition: $transition
+.product-card__category
+  background-color: $blue-dark
+  color: $white
+  font-size: 1rem
+  font-weight: 300
+  text-transform: uppercase
+  padding: 3px 15px
+  border-radius: 15px
+  display: inline-flex
+  justify-content: center
+  transition: $transition
+.product-card__title
+  font-size: 3rem
+  font-weight: 500
+  line-height: 2
+.product-card__attribute-container
+  display: flex
+  margin-bottom: 15px
+.product-card__attribute
+  margin-left: 20px
+  &:first-child
+    margin-left: 0
+.product-card__attribute-title
+  font-size: 1rem
+  font-weight: 300
+  text-transform: uppercase
+.product-card__attribute-value
+  font-size: 1.8rem
+  font-weight: 500
+.product-card__description
+  font-size: 1rem
+//hover state of product-card
+.product-card:hover
+  box-shadow: 10px 10px 50px 10px rgba(0, 0, 0, 0.1)
+  background-color: $aquaman
+  .product-card__details
+    color: $white
+  .product-card__category
+    background-color: $white
+    color: $aquaman

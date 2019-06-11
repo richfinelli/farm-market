@@ -1,0 +1,46 @@
+//typography
+//any class prefixed with "global_" applies to elements on the site that can appear any/every where. 
+//Should only be modified if the styleguide is updated.
+.global__title
+  font-size: 3.6rem
+  font-weight: 600
+  text-transform: uppercase
+  line-height: 2
+
+.global__title--less1
+  font-size: 2.7rem
+  font-weight: 500
+  line-height: 2
+
+.global__title--less2
+  font-size: 1.8rem
+  font-weight: 500
+  line-height: 2
+
+.global__title--less3
+  font-size: .9rem
+  font-weight: 500
+  line-height: 2
+
+.gobal__back-link 
+  display: flex
+  align-items: center
+  transition: $transition
+  &,
+  &:visited,
+  &:active
+    color: $blue-dark
+    text-decoration: none
+  &:before 
+    content: ""
+    display: block
+    height: 15px
+    width: 15px
+    border-left: 2px solid $blue-dark
+    border-top: 2px solid $blue-dark
+    transform: rotate(-45deg)
+    transition: $transition
+  &:hover
+    &:before
+      transform: scale(1.25) rotate(-45deg)
+
